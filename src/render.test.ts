@@ -18,6 +18,6 @@ describe("test liquid js render", () => {
   it("fail, json parser error", () => {
     expect(
       liquidJSRender(template, `{'hello': 'Hello LiquidJS'}`)
-    ).rejects.toThrowError("Unexpected token ' in JSON at position 1");
+    ).rejects.toThrowError("Expected property name or '}' in JSON at position 1");
   });
 });
