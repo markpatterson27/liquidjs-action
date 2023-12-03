@@ -30,7 +30,7 @@
     "liquidjs": "^10.9.4"
   },
   "devDependencies": {
-    "@types/jest": "^27.0.3",
+    "@types/jest": "^29.5.10",
     "@types/node": "^16.11.9",
     "@vercel/ncc": "^0.32.0",
     "dotenv": "^10.0.0",
