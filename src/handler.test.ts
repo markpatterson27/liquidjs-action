@@ -17,7 +17,7 @@ describe("test handler", () => {
         templateString: "",
         outputFile: "./example/RENDER.md",
         outputName: "test-state",
-      })
+      }),
     ).resolves;
   });
 
@@ -29,7 +29,7 @@ describe("test handler", () => {
         templateString: "{{ hello }}, {{ foo.bar }}",
         outputFile: "./example/RENDER.md",
         outputName: "test-state",
-      })
+      }),
     ).resolves;
   });
 
@@ -41,9 +41,9 @@ describe("test handler", () => {
         templateString: "",
         outputFile: "./example/RENDER.md",
         outputName: "test-state",
-      })
+      }),
     ).rejects.toBe(
-      "should have at least 'template-file' or 'template-string' input"
+      "should have at least 'template-file' or 'template-string' input",
     );
   });
 });

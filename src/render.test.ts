@@ -11,13 +11,15 @@ describe("test liquid js render", () => {
 
   it("success", () => {
     expect(liquidJSRender(template, jsonVariables)).resolves.toBe(
-      "Hello LiquidJS, Foo Bar"
+      "Hello LiquidJS, Foo Bar",
     );
   });
 
   it("fail, json parser error", () => {
     expect(
-      liquidJSRender(template, `{'hello': 'Hello LiquidJS'}`)
-    ).rejects.toThrowError("Expected property name or '}' in JSON at position 1");
+      liquidJSRender(template, `{'hello': 'Hello LiquidJS'}`),
+    ).rejects.toThrowError(
+      "Expected property name or '}' in JSON at position 1",
+    );
   });
 });

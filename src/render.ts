@@ -2,7 +2,7 @@ import { Liquid } from "liquidjs";
 
 export async function liquidJSRender(
   templateString: string,
-  jsonVariables: string
+  jsonVariables: string,
 ): Promise<string> {
   return new Promise<string>((resolve, reject) => {
     try {
